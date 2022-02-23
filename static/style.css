@@ -1,0 +1,121 @@
+*{
+    /* background-color: black; */
+    /* background-color: black; */
+    margin: 0px;
+    padding: 0%;
+}
+
+.title{
+    text-shadow: -2px 0px 9px white;
+    text-align: center;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+.image_selector{
+    margin-top: 5%;
+    margin-left: 5%;
+    background-color:white;
+    /* border-radius: 2%;      */
+    width: 500px;
+    float:left;
+}
+.image-box{
+    background-color:blueviolet;
+    border-radius: 10%;
+    height: 60px;
+    width: 60px;
+    margin:5% 5%;
+    display: inline-block;
+    overflow: hidden;
+    box-shadow: 1px 2px 15px 0px;
+}
+
+.img{
+    width: 100%;
+    height: 100%; 
+    /* object-fit: contain; */
+    object-fit: cover;
+}
+
+.add_image
+{
+    background-color:blueviolet;
+    border-radius: 10%;
+    height: 60px;
+    width: 60px;
+    margin:5% 5%;
+    display: inline-block;
+    overflow: hidden;
+    box-shadow: 1px 2px 15px 0px;
+}
+.material-icons{
+    color:white;
+    /* width: 100%; */
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    font-size: 4vw!important;
+}
+
+.image_input{
+    display: None;
+}
+.image_viewer{
+    background-color:white;
+    float:right;
+    height: 300px;
+    width: 700px;
+    margin-right: 100px;
+}
+
+.image{
+    width: 100%;
+    height: 100%; 
+    object-fit: contain;
+    /* object-fit: cover;    */
+}
+
+
+.color-pallete{
+    background-color:white; 
+    margin-top: 5%;
+    /* height: 30px; */
+}
+
+.new{
+    background-color:rgb(153, 146, 146); 
+    /* height: 30px; */
+    clear:both;
+}
+
+
+.colors
+{
+    width: 50px;
+    height: 50px;
+    margin: 10px 30px;
+    text-shadow: -2px 0px 9px white;
+    display: inline-block;
+}
+
+.colors:hover{
+    box-shadow: 4px 2px 18px -2px black;
+    transition: 0.4s;
+}
+
+
+.K{
+    margin-top: 2%;
+    margin-left: 5%;
+    margin-bottom: 2%;
+    background-color:white;
+    /* border-radius: 2%;      */
+    /* width: 500px;
+    float:left;    */
+}
+
+.numofcolors{
+    display: inline;
+    /* width:50px; */
+    size:20px;
+}

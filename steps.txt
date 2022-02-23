@@ -1,0 +1,5 @@
+1.make a virtual env using command : python -m venv myenv
+2.activate the venv
+3.pip install all the used modules
+4.pip install requests[security] flask gunicorn
+5.write Procfile as: web: gunicorn <app_name>:app
