@@ -28,9 +28,9 @@ def testfn():
     buf=io.BytesIO(de)
     img=Image.open(buf).convert("RGB")
     
-    with open("C:/Users/Home/Desktop/Machine Learning/web/static/assets/img4.jpg", "rb") as image2string:
-        converted_string = base64.b64encode(image2string.read())
-        converted_string=converted_string.decode('utf-8')
+    # with open("C:/Users/Home/Desktop/Machine Learning/web/static/assets/img4.jpg", "rb") as image2string:
+    #     converted_string = base64.b64encode(image2string.read())
+    #     converted_string=converted_string.decode('utf-8')
 
     
     # print('img:',img.width,img.height)
