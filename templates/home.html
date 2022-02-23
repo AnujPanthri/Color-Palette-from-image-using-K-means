@@ -12,37 +12,40 @@
     <!-- <script src="{{ url_for('static',filename='script.js' ) }}"></script> -->
 
     <h1 class='title'>Color Pallete Generator</h1>
-    <div class="image_selector">
-        <div class="image-box">
-            <img class="img" src="{{ url_for('static',filename='assets/img4.jpg' ) }}">
-        </div>
-        <div class="image-box">
-            <img class="img" src="{{ url_for('static',filename='assets/img10.jpg' ) }}">
-        </div>
-        <div class="image-box">
-            <img class="img" src="{{ url_for('static',filename='assets/img11.jpg' ) }}">
-        </div>
-
-        <div class="add_image">
+    <div class="items">
+        <div class="image_selector">
+            <div class="image-box">
+                <img class="img" src="{{ url_for('static',filename='assets/img4.jpg' ) }}">
+            </div>
+            <div class="image-box">
+                <img class="img" src="{{ url_for('static',filename='assets/img10.jpg' ) }}">
+            </div>
+            <div class="image-box">
+                <img class="img" src="{{ url_for('static',filename='assets/img11.jpg' ) }}">
+            </div>
+    
+            <div class="image-box add_image">
+                
+                <label for="file-input">
+                <i class="material-icons">add</i>
+            </label>
+            <input id="file-input" class="image_input" type="file" accept="image/*">
+    
+            </div>
             
-            <label for="file-input">
-            <i class="material-icons">add</i>
-        </label>
-        <input id="file-input" class="image_input" type="file" accept="image/*">
-
+            <div class="K">
+                <h2 style="display: contents;">number of colors: </h2>
+                <input class="numofcolors" type="text" value="6">
+            </div>
+            
         </div>
         
-        <div class="K">
-            <h2 style="display: contents;">number of colors: </h2>
-            <input class="numofcolors" type="text" value="6">
+    
+        <div class="image_viewer">
+            <img class="image">
         </div>
-        
     </div>
     
-
-    <div class="image_viewer">
-        <img class="image">
-    </div>
 
     <div class="new"></div>
     <div class="color-pallete"></div>

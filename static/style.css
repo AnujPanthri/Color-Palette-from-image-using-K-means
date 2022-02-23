@@ -1,6 +1,4 @@
 *{
-    /* background-color: black; */
-    /* background-color: black; */
     margin: 0px;
     padding: 0%;
 }
@@ -11,13 +9,18 @@
     margin-top: 5%;
     margin-bottom: 5%;
 }
+.items{
+    display:flex;
+    flex-direction:row;
+}
+/* first child */
 .image_selector{
-    margin-top: 5%;
-    margin-left: 5%;
+    flex:1 1 auto;
+    margin: 5% 1%;
     background-color:white;
     /* border-radius: 2%;      */
     width: 500px;
-    float:left;
+    /* float:left; */
 }
 .image-box{
     background-color:blueviolet;
@@ -37,34 +40,25 @@
     object-fit: cover;
 }
 
-.add_image
-{
-    background-color:blueviolet;
-    border-radius: 10%;
-    height: 60px;
-    width: 60px;
-    margin:5% 5%;
-    display: inline-block;
-    overflow: hidden;
-    box-shadow: 1px 2px 15px 0px;
-}
 .material-icons{
     color:white;
-    /* width: 100%; */
-    width:100%;
-    height:100%;
-    object-fit:cover;
-    font-size: 4vw!important;
+    font-size: 60px!important;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
 }
 
 .image_input{
     display: None;
 }
+/* second child */
 .image_viewer{
-    background-color:white;
-    float:right;
-    height: 300px;
-    width: 700px;
+    flex:1 1 auto;
+    /* background-color:white; */
+    /* float:right; */
+    /* height: 300px; */
+    width: 50vw;
     margin-right: 100px;
 }
 
@@ -85,7 +79,7 @@
 .new{
     background-color:rgb(153, 146, 146); 
     /* height: 30px; */
-    clear:both;
+    /* clear:both; */
 }
 
 
@@ -109,13 +103,38 @@
     margin-left: 5%;
     margin-bottom: 2%;
     background-color:white;
-    /* border-radius: 2%;      */
-    /* width: 500px;
-    float:left;    */
 }
 
 .numofcolors{
     display: inline;
-    /* width:50px; */
     size:20px;
 }
+
+
+
+
+
+
+
+@media screen and (max-width: 600px) {
+    .items{
+        display:block;
+    }
+    .image_selector{
+        width:100%;
+    }
+    
+    .image-box{
+        height: 20px;
+        width: 20px;
+        margin:2% 2%;
+    }
+    .material-icons{
+        font-size: 20px!important;
+    }
+    .image_viewer{
+        margin-left: auto;
+        margin-right: auto;
+    }
+  }
+  

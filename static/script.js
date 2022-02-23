@@ -1,6 +1,7 @@
-// img_boxes=document.querySelectorAll('.image-box')
+document.querySelector('.numofcolors').setAttribute("size", document.querySelector('.numofcolors').value.length );
 var base64='';
-var numofcolors=6;
+var numofcolors=document.querySelector('.numofcolors').value;
+
 
 const img_boxes=document.getElementsByClassName('image-box');
 
